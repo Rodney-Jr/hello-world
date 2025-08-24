@@ -1,0 +1,11 @@
+name: Hello Cloud Workflow
+
+on: [push] # Triggers the workflow on every push to the repository
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest # Specifies the runner environment
+
+    steps:
+      - name: Print Hello Cloud
+        run: echo "hello cloud" # Executes a shell command to print the message
